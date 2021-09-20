@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spark Foundation</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+
+      
+      <div class="logo">
+        <img src ="spark.png">
+        <a href="#">The Sparks Foundation</a>
+      </div>
+
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#section2">About</a></li>
+        <li><a href="#socials">Contact</a></li>
+      </ul>
+
+
+      <div class="icon menu-btn">
+
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="banner">
+    
+    <div class="contact">
+      
+      
+
+  </div>
+  </div>
+
+
+
+  <section id="section2" class="section2">
+    <div class="heading">
+      <h1>ABOUT THE SITE</h1>
+    </div>
+
+    <div class="content">
+        <div class="content1">
+            <p>We work on slum issues and the problems of the homeless. Ever since the government started taking precautionary measures against the novel coronavirus, we realised that it will impact the homeless and the extremely poor in slums<br>
+              TSF ran an online campaign called ‘Together We Can’, appealing to individuals to donate generously for the cause. The organisation then conducted a survey in bastis (slums) to find those who are actually in need of this help.
+                
+            </p>
+        </div>
+
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Q67gldZ1P_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+
+        </div>
+
+        <div id="donate">
+          <div class="donate_lines">
+              
+              
+
+              <div class="buttons">
+                  <div class="container">
+                      <a href="https://rzp.io/l/Z0j632m2"class="btn effect01" ><span>Donate Now</span></a>
+                  </div>
+                </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+<div id="socials" class="bottom-container">
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <a class="linkbtn linkbtn-icon linkbtn-github" href="https://github.com/AK260"><i class="fa fa-github"></i><span>Github</span></a>
+      <a class="linkbtn linkbtn-icon linkbtn-mail" href="mailto:amit7070213121@gmail.com"><i class="fa fa-envelope"></i><span>Mail</span></a>
+
+      
+</div>
+  
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+  
